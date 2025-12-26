@@ -1,0 +1,22 @@
+[project]
+name = "pyfemlite"
+version = "0.1.0"
+description = "Educational finite element solver: 2D Poisson and 2D linear elasticity on T3 triangles."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name="Your Name"}]
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.7"]
+
+[project.scripts]
+pyfemlite = "pyfemlite.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

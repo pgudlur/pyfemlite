@@ -1,6 +1,7 @@
 # pyfemlite
 
 Open-source, minimal finite element solver in pure Python (NumPy/SciPy).
+> Verified against Euler–Bernoulli beam theory with mesh convergence study.
 
 ## Features
 - 2D Poisson equation on T3 (linear) triangular elements
